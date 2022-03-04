@@ -10,6 +10,12 @@ footer {
     display: flex;
     width: 100%;
     justify-content: center;
+    position: relative;
+    bottom: 0;
+}
+
+main {
+    min-height: calc(100vh - 80px);
 }
 
 .centered-wrap {
