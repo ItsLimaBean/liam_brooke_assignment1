@@ -1,0 +1,7 @@
+.page-header {
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    gap: 12px;
+    margin-right: 20px;
+}
