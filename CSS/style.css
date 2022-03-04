@@ -5,3 +5,42 @@
     gap: 12px;
     margin-right: 20px;
 }
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.centered-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.centered-wrap section {
+    width: 700px;
+}
+
+.create-note {
+    background-color: transparent;
+    border: none;
+}
+
+.create-note:hover {
+    color: blue;
+}
+
+.create-note:before {
+    content: "+";
+    font-size: 1.8em;
+    padding-right: 5px;
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .centered-wrap section {
+        width: 100%
+    }
+}
