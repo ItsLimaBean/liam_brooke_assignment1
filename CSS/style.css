@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 .page-header {
     list-style-type: none;
     display: flex;
@@ -27,12 +31,20 @@ main {
 }
 
 .centered-wrap section {
-    width: 70%;
+    width: 400px;
+    display: flex;
+    padding-top: 140px;
+}
+
+.centered-wrap textarea {
+    height: min-content;
+    width: calc(100% - 4px);
 }
 
 .create-note {
     background-color: transparent;
     border: none;
+    align-self: flex-start;
 }
 
 .create-note:hover {
@@ -63,18 +75,38 @@ main {
     align-self: flex-end;
 }
 
-.side-menu.opened .content {
-}
-
 .side-menu.opened {
     width: 250px;
     display: flex;
     flex-direction: column;
 }
 
+.text-wrap {
+    width: 100%;
+}
+
+.note-control {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 10px;
+}
+
+button#create {
+    color: green;
+}
+
+button#delete {
+    color: red;
+}
+
 @media screen and (max-width: 600px) {
     .centered-wrap section {
-        width: 100%
+        width: 100%;
+        padding: 4px;
+    }
+
+    .text-wrap {
+        width: 100%;
     }
 
     main {
