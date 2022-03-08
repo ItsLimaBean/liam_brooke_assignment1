@@ -16,6 +16,8 @@ footer {
 
 main {
     min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: row;
 }
 
 .centered-wrap {
@@ -44,6 +46,9 @@ main {
 
 }
 
+.side-menu .open::before {
+    content: ">>";
+}
 
 @media screen and (max-width: 600px) {
     .centered-wrap section {
