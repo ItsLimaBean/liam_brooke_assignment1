@@ -27,7 +27,7 @@ main {
 }
 
 .centered-wrap section {
-    width: 700px;
+    width: 70%;
 }
 
 .create-note {
@@ -46,12 +46,42 @@ main {
 
 }
 
+.side-menu.opened {
+    background-color: green;
+}
+
 .side-menu .open::before {
     content: ">>";
+}
+
+.side-menu.opened .open::before {
+    content: "<<"
+}
+
+.side-menu.opened .open {
+    width: fit-content;
+    align-self: flex-end;
+}
+
+.side-menu.opened .content {
+}
+
+.side-menu.opened {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 600px) {
     .centered-wrap section {
         width: 100%
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .side-menu.opened {
+        width: 100%;
     }
 }
