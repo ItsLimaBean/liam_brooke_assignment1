@@ -1,5 +1,10 @@
 body {
     margin: 0;
+    background-color: #191724;
+}
+
+a, button, small {
+    font-family: "Roboto", sans-serif;
 }
 
 .page-header {
@@ -10,12 +15,20 @@ body {
     margin-right: 20px;
 }
 
+a {
+    color: #9ccfd8;
+}
+a:visited {
+    color: #9ccfd8;
+}
+
 footer {
     display: flex;
     width: 100%;
     justify-content: center;
     position: relative;
     bottom: 0;
+    color: #e0def4;
 }
 
 main {
@@ -39,16 +52,20 @@ main {
 .centered-wrap textarea {
     height: min-content;
     width: calc(100% - 4px);
+    background-color: #26233a;
+    outline: none;
+    color: #e0def4;
 }
 
 .create-note {
     background-color: transparent;
     border: none;
     align-self: flex-start;
+    color: #e0def4;
 }
 
 .create-note:hover {
-    color: blue;
+    color: #31748f;
 }
 
 .create-note:before {
@@ -59,7 +76,18 @@ main {
 }
 
 .side-menu.opened {
-    background-color: green;
+    background-color: #26233a;
+}
+
+.side-menu .open {
+    background-color: transparent;
+    border: none;
+    font-size: 1.8em;
+    color: #f6c177;
+}
+
+.side-menu .open:hover {
+    color: #eb6f92;
 }
 
 .side-menu .open::before {
@@ -91,12 +119,14 @@ main {
     column-gap: 10px;
 }
 
-button#create {
-    color: green;
+.note-control button {
+    background-color: #e0def4;
+    border: 2px solid #e0def4;
+    border-radius: 4px;
 }
 
-button#delete {
-    color: red;
+.content ul {
+    list-style-type: none;
 }
 
 @media screen and (max-width: 600px) {
